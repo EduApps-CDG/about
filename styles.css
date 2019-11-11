@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Game";
+  src: url(ttf/kongtext.ttf);
+}
+
+html body {
+  margin:0;
+  font-family:"Game","Lucida Console";
+  display:flex;
+}
+
+.header {
+  position:fixed;
+  display:inline-block;
+  background: #000000;
+  color: #ffffff;
+  width:100%;
+  height:50px;
+  z-index: 2;
+}
+
+.header img {
+  margin:5px;
+  border-radius: 5px;
+  max-height:calc(100% - 10px);
+}
+
+.header .nav {
+  margin-left:15px;
+  display: inline-block;
+  top:0;
+  bottom:0;
+}
+
+a {
+  color:#ffffff;
+  text-align: center;
+  display:table-cell;
+  text-decoration:none;
+  padding-left: 5px;
+  padding-right: 5px;
+  height:50px;
+  vertical-align:middle;
+  margin: auto;
+}
+
+a:link {
+  background:#000000;
+  color: #ffffff;
+  text-decoration:none;
+}
+
+a:visited {
+  background:#000000;
+  color: #ffffff;
+  text-decoration:none;
+}
+
+a:hover {
+  background:#333333;
+  color: #ffffff;
+  text-decoration:none;
+}
+
+a:active {
+  background:#333333;
+  color: #ffffff;
+  text-decoration:none;
+}
+
+.content {
+  background-color:#000000;
+  position: absolute;
+  top:50px;
+  display:block;
+  vertical-align:middle;
+  width:100vw;
+  height:100vh;
+}
+
+.content a {
+  display: block;
+  top:0;
+  vertical-align:middle;
+  bottom:0;
+}
+
+.content center {
+  position:relative;
+  vertical-align:middle;
+  display:inline-grid;
+  width:100%;
+  height:100%;
+  grid-template-columns: 1fr 1fr;
+  grid-columns: 50% 50%;
+  //grid-rows: 50px;
+  //grid-gap: 0.5em;
+  word-wrap:wrap;
+  overflow-wrap:break-word:
+}
+
+.container {
+  position:relative;
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  overflow-wrap:break-word:
+}
+
+.container a {
+  display:inline-block;
+}
+
+.container .ic-github {
+  fill:white;
+}
+
+center img,center svg {
+  display:table-row;
+  width:50px;
+  height:50px;
+  padding:5px;
+  
+}
